@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A fast, light frontend for make.fun: live bounties, rewards, leaderboards and builder profiles, read from make.fun's public API.">
+<title>make.fun — live bounties</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/" aria-label="make.fun home">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="8" fill="#b8f135"/><path d="M8 21V11l4 5 4-5v10" stroke="#0b0e14" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="23" cy="12" r="2.2" fill="#0b0e14"/><path d="M20.5 21h5" stroke="#0b0e14" stroke-width="2.6" stroke-linecap="round"/></svg>
+    <span>make<em>.fun</em></span>
+  </a>
+  <nav class="topnav" aria-label="Main">
+    <a href="#/" data-nav="board">Bounties</a>
+    <a href="#/bounty/makefun-frontend-01/leaderboard" data-nav="leaders">Leaderboard</a>
+  </nav>
+  <form id="jump" class="jump" role="search">
+    <input id="jump-input" type="search" placeholder="Jump to a builder — @handle" aria-label="Open a builder profile by handle" autocomplete="off" spellcheck="false">
+  </form>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="foot">
+  <p>An independent frontend for <a href="https://make.fun" rel="noopener">make.fun</a>, reading its public API live. Rewards are paid in USDC on Solana by make.fun.</p>
+</footer>
+</body>
+</html>
